@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Lists</title> 
+    </head>
+<body>
+    <div id = "root">
+        <ul>
+            <li v-for="name in names" v-text="name"> </li>
+        </ul>
+        <input id="input" type="text" v-model="newName">
+        <button @click="addName">Add Name</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el:'#root',
+            data: {
+              // lets how you can show arry in a list
+              newName:'',
+              names: ['Joe', 'mary', 'sitlu', 'nitin']
+            },
+
+            methods: {
+                addName: function(){
+                    this.names.push(this.newName);
+                    this.newName='';
+
+
+                }
+            },
+
+            
+            
+        });
+    </script>
+</body>
+</html>

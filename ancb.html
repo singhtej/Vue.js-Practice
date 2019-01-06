@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>ACB
+        </title>
+        
+    </head>
+<body>
+    <h1>Attribute and class Binding practice</h1>
+    <div id="root">
+        //v-bind directive to bind a property in my model to an element Attribute
+       <button v-bind:title="title">Hover Over Me</button>
+       
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#root',
+            data:{
+          
+                title: 'Now the title is being set though JavaScript.'
+            }
+        });
+    </script>
+</body>
+</html>

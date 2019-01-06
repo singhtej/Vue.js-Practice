@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>ACB</title>
+
+        <style>
+            .color-red { color:red;}
+            .color-blue{color: blue;}
+        </style>
+
+    </head>
+<body>
+   
+    <div id="root">
+       
+        <h1 :class="className">Hello World</h1>
+        <h1 :class="secondClass">Hello World</h1>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
+  
+  <script>
+        var app = new Vue({
+            el: '#root',
+            data:{
+                className: 'color-red',
+                secondClass: 'color-blue'
+               
+            }
+        });
+    </script>
+</body>
+</html>

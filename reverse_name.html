@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Need of computed Properties</title>
+
+</head>
+<body>
+    
+    <div id = "root">
+       <h1> {{message.split('').reverse().join('')}}</h1>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#root',
+            data:{
+                message: 'Tejveer Singh'
+            }
+        });
+    
+    
+    </script>
+</body>
+</html>

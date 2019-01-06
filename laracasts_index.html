@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+
+</head>
+<body>
+    <div id="root">
+    <input type="text" id="input" v-model="name">
+    <p>The value of the input is: {{ message }}</p>
+    <p>This is name: {{name}}</p>
+    <p> This is a combination of two data value {{firstName+' ' +email}}</p>
+    </div>
+    <div id="address">
+            <input type="text" id="input" v-model="add">
+            <p>This is my village name : {{add}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+    
+
+       // document.querySelector('#input').value = data.message;
+    // create a instance
+       new Vue({
+           //bind a element
+           el: '#root',
+           data: {
+            message: 'Hello World',
+            name: 'Tejveer',
+            firstName: 'Singh',
+            email: 'singh.tej@hotmail.com'
+        }
+       })
+       new Vue ({
+           el:'#address',
+           data:{
+               add: ' Nagla katak'
+           }
+       })
+    </script>
+</body>
+
+</html>
