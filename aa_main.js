@@ -7,7 +7,7 @@ Vue.component('modal', {
              <div class="modal-background"></div>
                  <div class="modal-content">
                     <div class="box">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                     <slot></slot>
                     </div>   
     
                 </div>

@@ -4,15 +4,22 @@
         <title> Another Example of Convert Bulma's Model component into a full-fledged Vue Component with behavior</title>
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
         <style type="text/css">body {padding-top: 80px;}</style>
-    
-    
+        <style>
+          
+            h6 {
+                color:red;
+            }
+        </style>
     </head>
 <body>
-
+       
     <div id = "root" class="container">
         
-        <modal v-if="showModal" @close="showModal=false"></modal>
-
+        <modal v-if="showModal" @close="showModal=false">
+                
+            <h6>General tasks</h6>
+            <p>We have a model, and we are allowed to insert any text</p>
+        </modal>
         <button @click="showModal= true">Show Modal</button>
         
     </div>
