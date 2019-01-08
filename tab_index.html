@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Another Example of Convert Bulma's Model component into a full-fledged Vue Component with behavior</title>
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+        <style type="text/css">body {padding-top: 40px;}</style>
+       
+    </head>
+<body>
+       
+    <div id = "root" class="container">
+      <tabs>  
+        <tab name="About us" :selected="true">
+            <h1>Here is the content for the about us tab.</h1>
+        </tab>
+
+        <tab name="About Culture">
+            <h1>Here is the content for the about culture.</h1>
+        </tab>
+
+        <tab name="About Vision">
+            <h1>Here is the content for the about vision.</h1>
+        </tab>
+       </tabs>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src= "tab_main.js"></script>
+</body>
+</html>
