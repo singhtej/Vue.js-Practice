@@ -1,3 +1,6 @@
+// shared event assistant 
+window.Event =new Vue();
+
 Vue.component('coupon',{
 
     template: '<input placeholder="Enter your coupon Code" @blur="onCouponApplied">',
@@ -5,7 +8,7 @@ Vue.component('coupon',{
     methods:{
 
         onCouponApplied(){
-            this.$emit('applied');
+            Event.$emit('applied');
         }
 
     }
@@ -20,9 +23,8 @@ new Vue({
     data:{
         couponApplied:false
     },
-    methods: {
-        onCouponApplied(){
-            alert('IT was applied');
-        }
+    
+    created(){
+        Event.$on('applied', () => alert('Handling it'))
     }
 });
